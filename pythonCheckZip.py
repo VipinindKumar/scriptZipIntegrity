@@ -1,5 +1,5 @@
 '''
-Test if the zip files are not corrected
+Checks Integrity of the zip files in a folder(current) 
 '''
 
 from __future__ import print_function
