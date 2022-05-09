@@ -11,6 +11,8 @@ import glob
 import os
 import time
 
+zipFolderPath = "D:\\vipin\\Other\\scriptZipIntegrity"
+
 def test_zipfile(filepath):
     '''
     Test whether a zipfile is valid
@@ -41,7 +43,7 @@ def main():
     log_file_corrupted = open(log_filepath_corrupted, 'w')
     log_filepath_valid = 'result_valid.log'
     log_file_valid = open(log_filepath_valid, 'w')
-    zipfile_filepaths = sorted(glob.iglob(os.path.join(zipfiles_root_folder, '*', '*.zip'))) # Modify this to whatever folders you need
+    zipfile_filepaths = sorted(glob.iglob(os.path.join(zipfiles_root_folder, zipFolderPath, '*.zip')))
 
     # Testing zipfiles
     start_time = time.time()
